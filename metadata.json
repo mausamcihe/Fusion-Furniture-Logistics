@@ -1,0 +1,6 @@
+{
+  "name": "Fusion Furniture Logistics Suite",
+  "description": "Enterprise live tracking, encrypted real-time dispatch, and driver operations suite with interactive Google Maps navigation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
