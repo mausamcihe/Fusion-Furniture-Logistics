@@ -24,13 +24,13 @@ export const Header: React.FC<HeaderProps> = ({
   const [showUserMenu, setShowUserMenu] = React.useState(false);
 
   return (
-    <header className="fixed top-0 w-full z-50 pt-safe bg-surface/85 dark:bg-slate-900/90 backdrop-blur-xl border-b border-border-subtle dark:border-slate-800 shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+    <header className="fixed top-0 w-full z-50 pt-safe bg-white/95 dark:bg-slate-900/95 backdrop-blur-xl border-b border-slate-200 dark:border-slate-800 shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
       <div className="h-16 px-4 flex items-center justify-between max-w-4xl mx-auto">
         <div className="flex items-center gap-2 min-w-0">
           {showBack && (
             <button
               aria-label="Go Back"
-              className="w-10 h-10 flex items-center justify-center rounded-lg text-on-surface dark:text-slate-200 hover:text-primary-container hover:bg-surface-subtle dark:hover:bg-slate-800 transition-colors"
+              className="w-10 h-10 flex items-center justify-center rounded-lg text-slate-800 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors cursor-pointer"
               onClick={onBack}
             >
               <span className="material-symbols-outlined text-[24px]">arrow_back</span>
@@ -48,7 +48,7 @@ export const Header: React.FC<HeaderProps> = ({
               </span>
             </div>
             <div className="h-5 w-px bg-slate-300 dark:bg-slate-700 mx-1 hidden sm:block"></div>
-            <h1 className="font-headline-md text-[17px] text-on-surface dark:text-slate-100 truncate font-semibold">
+            <h1 className="font-headline-md text-[17px] text-slate-900 dark:text-slate-100 truncate font-semibold">
               {title}
             </h1>
           </div>
@@ -70,18 +70,18 @@ export const Header: React.FC<HeaderProps> = ({
             <button
               onClick={onOpenChat}
               title="Open Live Delivery Chat"
-              className="w-9 h-9 rounded-lg flex items-center justify-center text-slate-600 dark:text-slate-300 hover:bg-surface-subtle dark:hover:bg-slate-800 relative transition-colors"
+              className="w-9 h-9 rounded-lg flex items-center justify-center text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 relative transition-colors cursor-pointer"
             >
               <span className="material-symbols-outlined text-[20px]">chat</span>
               <span className="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-orange-500 animate-pulse"></span>
             </button>
           )}
 
-          {/* Dark Mode Switcher */}
+          {/* Dark / Day Mode Switcher */}
           <button
             onClick={toggleTheme}
-            title={isDark ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
-            className="w-9 h-9 rounded-lg flex items-center justify-center text-slate-600 dark:text-slate-300 hover:bg-surface-subtle dark:hover:bg-slate-800 transition-colors"
+            title={isDark ? 'Switch to Day Mode (Light)' : 'Switch to Dark Mode'}
+            className="w-9 h-9 rounded-lg flex items-center justify-center text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors cursor-pointer"
           >
             <span className="material-symbols-outlined text-[20px]">
               {isDark ? 'light_mode' : 'dark_mode'}

@@ -165,7 +165,7 @@ export const StopArrivalScreen: React.FC<StopArrivalScreenProps> = ({ onNavigate
       </div>
 
       {/* Fixed Bottom Action Panel */}
-      <div className="fixed bottom-16 left-0 right-0 z-40 bg-surface/95 dark:bg-slate-900/95 backdrop-blur-xl px-4 py-3 border-t border-border-subtle dark:border-slate-800">
+      <div className="fixed bottom-16 left-0 right-0 z-40 bg-white/95 dark:bg-slate-900/95 backdrop-blur-xl px-4 py-3 border-t border-slate-200 dark:border-slate-800">
         <div className="max-w-md mx-auto space-y-2">
           <button
             onClick={() => onNavigate('HANDOVER')}

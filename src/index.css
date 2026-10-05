@@ -1,5 +1,16 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-headline: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  --color-surface: #ffffff;
+  --color-surface-subtle: #f8fafc;
+  --color-on-surface: #0f172a;
+  --color-border-subtle: #e2e8f0;
+}
+
 @layer base {
   :root {
     --font-headline: "Plus Jakarta Sans", system-ui, sans-serif;

@@ -57,7 +57,7 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({ onSuccess }) => {
   };
 
   return (
-    <div className="min-h-screen w-full bg-slate-50 dark:bg-slate-950 flex flex-col justify-between p-4 sm:p-6 text-on-surface dark:text-white">
+    <div className="min-h-screen w-full bg-slate-50 dark:bg-slate-950 flex flex-col justify-between p-4 sm:p-6 text-slate-900 dark:text-white">
       {/* Top Header */}
       <div className="w-full max-w-md mx-auto pt-safe flex items-center justify-between">
         <div className="flex flex-col">

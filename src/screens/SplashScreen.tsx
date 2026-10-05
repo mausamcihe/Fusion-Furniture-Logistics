@@ -23,7 +23,7 @@ export const SplashScreen: React.FC<SplashScreenProps> = ({ onFinish }) => {
   }, [onFinish]);
 
   return (
-    <div className="fixed inset-0 z-50 flex flex-col items-center justify-between p-6 bg-gradient-to-b from-orange-50/50 via-surface to-surface dark:from-slate-950 dark:via-slate-900 dark:to-slate-900 text-on-surface dark:text-white select-none">
+    <div className="fixed inset-0 z-50 flex flex-col items-center justify-between p-6 bg-gradient-to-b from-orange-50/50 via-white to-white dark:from-slate-950 dark:via-slate-900 dark:to-slate-900 text-slate-900 dark:text-white select-none">
       {/* Top Status Header */}
       <div className="w-full flex items-center justify-between pt-safe text-xs font-semibold text-slate-600 dark:text-slate-300">
         <span className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-50 dark:bg-emerald-950/80 text-emerald-600 dark:text-emerald-400 border border-emerald-200 dark:border-emerald-800">
